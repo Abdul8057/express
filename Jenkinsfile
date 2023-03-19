@@ -9,6 +9,7 @@ pipeline {
             steps {
                 sh '''
                 git clone https://github.com/Abdul8057/express.git
+		rm -rf express
                 '''
             }
         }
