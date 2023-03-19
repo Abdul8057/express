@@ -2,7 +2,7 @@ pipeline {
      agent any
 
    environment {
-	DOCKER_PASSWORD=credentials('79fff654-0371-4e3f-ac5a-c272bb6fbd01')
+	DOCKER_PASSWORD=credentials('072897f1-152a-4b25-830b-d45156ab0e3a')
   }		
     stages{
         stage('cloning the Git Repo') {
