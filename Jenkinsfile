@@ -32,7 +32,7 @@ pipeline {
 	stage('Running the Docker Image with port 3000'){
             steps{
                sh ''' 
-	       docker run -it -d Ubuntu
+	       docker run -it -d ubuntu
 	       docker rm -f $(docker ps -a -q) 
 	       docker run -it -d -p 3000:3000 hello-world:${BUILD_NUMBER}
              '''
